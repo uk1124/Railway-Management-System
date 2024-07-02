@@ -55,7 +55,7 @@ A Railway Management System built with Node.js, Express.js, and MySQL. Users can
 
 Create a .env file in the root directory with the following variables:
 
-    ```bash
+    ```env
     PORT = 4000
     DB_HOST = localhost
     DB_USER = root
@@ -85,7 +85,7 @@ Create a .env file in the root directory with the following variables:
 
 You should see:
 
-    ```bash
+    ```
     Initializing Sequelize connection...
     Connection has been established successfully.
     Database sync complete.
