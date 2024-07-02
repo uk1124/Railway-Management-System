@@ -55,7 +55,7 @@ A Railway Management System built with Node.js, Express.js, and MySQL. Users can
 
 Create a .env file in the root directory with the following variables:
 
-    ```env
+    ```java
     PORT = 4000
     DB_HOST = localhost
     DB_USER = root
@@ -85,7 +85,7 @@ Create a .env file in the root directory with the following variables:
 
 You should see:
 
-    ```
+    ```java
     Initializing Sequelize connection...
     Connection has been established successfully.
     Database sync complete.
@@ -98,7 +98,7 @@ Use Postman or cURL to test the endpoints (details below).
 
 ### API Endpoints
 
-#### User Registration
+#### (i) User Registration
 
 - Endpoint: POST /api/auth/register
 
@@ -112,7 +112,7 @@ Use Postman or cURL to test the endpoints (details below).
   }
   ```
 
-#### User Login
+#### (ii) User Login
 
 - Endpoint: POST /api/auth/login
 
@@ -133,7 +133,7 @@ Use Postman or cURL to test the endpoints (details below).
   }
   ```
 
-#### Add a New Train (Admin Only)
+#### (iii) Add a New Train (Admin Only)
 
 - Endpoint: POST /api/admin/addTrain
 
@@ -152,7 +152,7 @@ Use Postman or cURL to test the endpoints (details below).
   }
   ```
 
-#### Get Seat Availability
+#### (iv) Get Seat Availability
 
 - Endpoint: POST /api/user/getSeatAvailability
 
@@ -169,7 +169,7 @@ Use Postman or cURL to test the endpoints (details below).
   }
   ```
 
-#### Book a Seat
+#### (v) Book a Seat
 
 - Endpoint: POST /api/user/bookSeat
 
@@ -185,7 +185,7 @@ Use Postman or cURL to test the endpoints (details below).
   }
   ```
 
-#### Get Booking Details
+#### (vi) Get Booking Details
 
 - Endpoint: GET /api/user/getBookingDetails
 
