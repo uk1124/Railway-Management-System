@@ -29,7 +29,6 @@ A Railway Management System built with Node.js, Express.js, and MySQL. Users can
 - MySQL
 - Sequelize ORM
 - JWT for Authentication
-- bcrypt for Password Hashing
 
 ## Requirements
 
@@ -55,7 +54,7 @@ A Railway Management System built with Node.js, Express.js, and MySQL. Users can
 
 Create a .env file in the root directory with the following variables:
 
-    ````
+    ````bash
     PORT = 4000
     DB_HOST = localhost
     DB_USER = root
@@ -63,7 +62,7 @@ Create a .env file in the root directory with the following variables:
     DB_NAME = railway_db
     JWT_SECRET = your_jwt_secret
     ADMIN_API_KEY = your_admin_api_key
-    ```
+    ````
 
 4. **Set Up the MySQL Database:**
 
@@ -85,7 +84,7 @@ Create a .env file in the root directory with the following variables:
 
 You should see:
 
-    ```
+    ```bash
     Initializing Sequelize connection...
     Connection has been established successfully.
     Database sync complete.
