@@ -39,23 +39,22 @@ A Railway Management System built with Node.js, Express.js, and MySQL. Users can
 
 ## Setup
 
-1. **Clone the Repository:**
+**1. Clone the Repository:**
 
-   ```bash
-   git clone https://github.com/uk1124/Railway-Management-System.git
-   ```
+```bash
+git clone https://github.com/uk1124/Railway-Management-System.git
+```
 
-2. **Install Dependencies:**
+**2. Install Dependencies:**
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
-3. **Create a .env File:**
+**3. Create a .env File:**
 
 Create a .env file in the root directory with the following variables:
 
-    ```plaintext
     PORT = 4000
     DB_HOST = localhost
     DB_USER = root
@@ -63,7 +62,6 @@ Create a .env file in the root directory with the following variables:
     DB_NAME = railway_db
     JWT_SECRET = your_jwt_secret
     ADMIN_API_KEY = your_admin_api_key
-    ```
 
 4. **Set Up the MySQL Database:**
 
@@ -85,7 +83,7 @@ Create a .env file in the root directory with the following variables:
 
 You should see:
 
-    ```plaintext
+    ```
     Initializing Sequelize connection...
     Connection has been established successfully.
     Database sync complete.
