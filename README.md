@@ -10,7 +10,6 @@ A Railway Management System built with Node.js, Express.js, and MySQL. Users can
 - [Setup](#setup)
 - [Running the Project](#running-the-project)
 - [API Endpoints](#api-endpoints)
-- [Environment Variables](#environment-variables)
 - [Assumptions](#assumptions)
 
 ## Features
@@ -42,10 +41,10 @@ A Railway Management System built with Node.js, Express.js, and MySQL. Users can
 
 1. **Clone the Repository:**
 
-   ```bash
-   git clone https://github.com/yourusername/railway-management-system.git
-   cd railway-management-system
-   ```
+```bash
+git clone https://github.com/uk1124/Railway-Management-System.git
+cd railway-management-system
+```
 
 2. **Install Dependencies:**
 
@@ -95,7 +94,7 @@ Use Postman or cURL to test the endpoints (details below).
 
 ### API Endpoints
 
-User Registration
+#### User Registration
 
 - Endpoint: POST /api/auth/register
 
@@ -109,7 +108,7 @@ User Registration
 }
 ```
 
-User Login
+#### User Login
 
 - Endpoint: POST /api/auth/login
 
@@ -124,38 +123,38 @@ User Login
 
 - Response:
 
-````json
+```json
 {
-"token": "jwt_token"
+  "token": "jwt_token"
 }
+```
 
-
-Add a New Train (Admin Only)
+#### Add a New Train (Admin Only)
 
 - Endpoint: POST /api/admin/addTrain
 
 - Headers:
 
-    x-api-key: your_admin_api_key
+  - x-api-key: your_admin_api_key
 
 - Body:
 
 ```json
 {
-"name": "Express Train",
-"source": "Station A",
-"destination": "Station B",
-"totalSeats": 100
+  "name": "Express Train",
+  "source": "Station A",
+  "destination": "Station B",
+  "totalSeats": 100
 }
-````
+```
 
-Get Seat Availability
+#### Get Seat Availability
 
 - Endpoint: POST /api/user/getSeatAvailability
 
 - Headers:
 
-  Authorization: Bearer jwt_token
+  - Authorization: Bearer jwt_token
 
 - Body:
 
@@ -166,13 +165,13 @@ Get Seat Availability
 }
 ```
 
-Book a Seat
+#### Book a Seat
 
 Endpoint: POST /api/user/bookSeat
 
 Headers:
 
-    Authorization: Bearer jwt_token
+    - Authorization: Bearer jwt_token
 
 Body:
 
@@ -182,13 +181,13 @@ Body:
 }
 ```
 
-Get Booking Details
+#### Get Booking Details
 
 Endpoint: GET /api/user/getBookingDetails
 
 Headers:
 
-    Authorization: Bearer jwt_token
+    - Authorization: Bearer jwt_token
 
 ## Assumptions
 
