@@ -63,7 +63,7 @@ Create a .env file in the root directory with the following variables:
     JWT_SECRET = your_jwt_secret
     ADMIN_API_KEY = your_admin_api_key
 
-4. **Set Up the MySQL Database:**
+**4. Set Up the MySQL Database:**
 
 - Ensure MySQL is running.
 
@@ -75,22 +75,20 @@ Create a .env file in the root directory with the following variables:
 
 ## Running the Project
 
-1. **Start the Server:**
+**1. Start the Server:**
 
-   ```bash
-   node app.js
-   ```
+    ```bash
+    node app.js
+    ```
 
 You should see:
 
-    ```
     Initializing Sequelize connection...
     Connection has been established successfully.
     Database sync complete.
     Server is running on port 4000
-    ```
 
-2. **Test the API Endpoints:**
+**2. Test the API Endpoints:**
 
 Use Postman or cURL to test the endpoints (details below).
 
