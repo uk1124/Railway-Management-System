@@ -69,17 +69,17 @@ Create a .env file in the root directory with the following variables:
 
 - Create the database:
 
-  ```sql
-  CREATE DATABASE railway_db;
-  ```
+```sql
+    CREATE DATABASE railway_db;
+```
 
 ## Running the Project
 
 **1. Start the Server:**
 
-    ```bash
-    node app.js
-    ```
+```bash
+   node app.js
+```
 
 You should see:
 
