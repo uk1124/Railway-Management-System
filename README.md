@@ -41,52 +41,56 @@ A Railway Management System built with Node.js, Express.js, and MySQL. Users can
 
 1. **Clone the Repository:**
 
-```bash
-git clone https://github.com/uk1124/Railway-Management-System.git
-cd railway-management-system
-```
+   ```bash
+   git clone https://github.com/uk1124/Railway-Management-System.git
+   ```
 
 2. **Install Dependencies:**
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 3. **Create a .env File:**
 
 Create a .env file in the root directory with the following variables:
-PORT = 4000
-DB_HOST = localhost
-DB_USER = root
-DB_PASSWORD = yourpassword
-DB_NAME = railway_db
-JWT_SECRET = your_jwt_secret
-ADMIN_API_KEY = your_admin_api_key
+
+    ````
+    PORT = 4000
+    DB_HOST = localhost
+    DB_USER = root
+    DB_PASSWORD = yourpassword
+    DB_NAME = railway_db
+    JWT_SECRET = your_jwt_secret
+    ADMIN_API_KEY = your_admin_api_key
+    ```
 
 4. **Set Up the MySQL Database:**
 
-Ensure MySQL is running.
+- Ensure MySQL is running.
 
-Create the database:
+- Create the database:
 
-```sql
-CREATE DATABASE railway_db;
-```
+  ```sql
+  CREATE DATABASE railway_db;
+  ```
 
 ## Running the Project
 
 1. **Start the Server:**
 
-```bash
-node app.js
-```
+   ```bash
+   node app.js
+   ```
 
 You should see:
 
-Initializing Sequelize connection...
-Connection has been established successfully.
-Database sync complete.
-Server is running on port 4000
+    ```
+    Initializing Sequelize connection...
+    Connection has been established successfully.
+    Database sync complete.
+    Server is running on port 4000
+    ```
 
 2. **Test the API Endpoints:**
 
@@ -100,13 +104,13 @@ Use Postman or cURL to test the endpoints (details below).
 
 - Body:
 
-```json
-{
-  "username": "user1",
-  "password": "password123",
-  "role": "user"
-}
-```
+  ```json
+  {
+    "username": "user1",
+    "password": "password123",
+    "role": "user"
+  }
+  ```
 
 #### User Login
 
@@ -114,20 +118,20 @@ Use Postman or cURL to test the endpoints (details below).
 
 - Body:
 
-```json
-{
-  "username": "user1",
-  "password": "password123"
-}
-```
+  ```json
+  {
+    "username": "user1",
+    "password": "password123"
+  }
+  ```
 
 - Response:
 
-```json
-{
-  "token": "jwt_token"
-}
-```
+  ```json
+  {
+    "token": "jwt_token"
+  }
+  ```
 
 #### Add a New Train (Admin Only)
 
@@ -139,14 +143,14 @@ Use Postman or cURL to test the endpoints (details below).
 
 - Body:
 
-```json
-{
-  "name": "Express Train",
-  "source": "Station A",
-  "destination": "Station B",
-  "totalSeats": 100
-}
-```
+  ```json
+  {
+    "name": "Express Train",
+    "source": "Station A",
+    "destination": "Station B",
+    "totalSeats": 100
+  }
+  ```
 
 #### Get Seat Availability
 
@@ -158,36 +162,36 @@ Use Postman or cURL to test the endpoints (details below).
 
 - Body:
 
-```json
-{
-  "source": "Station A",
-  "destination": "Station B"
-}
-```
+  ```json
+  {
+    "source": "Station A",
+    "destination": "Station B"
+  }
+  ```
 
 #### Book a Seat
 
-Endpoint: POST /api/user/bookSeat
+- Endpoint: POST /api/user/bookSeat
 
-Headers:
+- Headers:
 
-    - Authorization: Bearer jwt_token
+  - Authorization: Bearer jwt_token
 
-Body:
+- Body:
 
-```json
-{
-  "trainId": 1
-}
-```
+  ```json
+  {
+    "trainId": 1
+  }
+  ```
 
 #### Get Booking Details
 
-Endpoint: GET /api/user/getBookingDetails
+- Endpoint: GET /api/user/getBookingDetails
 
-Headers:
+- Headers:
 
-    - Authorization: Bearer jwt_token
+  - Authorization: Bearer jwt_token
 
 ## Assumptions
 
