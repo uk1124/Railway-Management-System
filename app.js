@@ -15,7 +15,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/user", userRoutes);
 
-// Add a simple root route to verify server is running
+// Simple root route to verify server is running
 app.get("/", (req, res) => {
   res.send("Server is running!");
 });
@@ -25,7 +25,7 @@ sequelize
   .authenticate()
   .then(() => {
     console.log("Connection has been established successfully.");
-    return sequelize.sync({ force: false }); // Use force: false to avoid dropping tables
+    return sequelize.sync({ force: false }); // To avoid dropping tables
   })
   .then(() => {
     console.log("Database sync complete.");

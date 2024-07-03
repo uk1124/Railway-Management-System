@@ -24,7 +24,7 @@ exports.updateTrainSeats = async (req, res) => {
       return res.status(404).json({ message: "Train not found" });
     }
     train.totalSeats = totalSeats;
-    train.availableSeats = totalSeats; // Optional: Reset available seats
+    train.availableSeats = totalSeats; // Reset available seats (Optional)
     await train.save();
     res
       .status(200)

@@ -3,7 +3,7 @@ const User = require("./user");
 const Train = require("./train");
 const Booking = require("./booking");
 
-// Define relationships
+// Relationships
 User.hasMany(Booking, { foreignKey: "userId" });
 Booking.belongsTo(User, { foreignKey: "userId" });
 
