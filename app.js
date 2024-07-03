@@ -38,6 +38,7 @@ sequelize
     process.exit(1); // Exit the process with a failure code
   });
 
+////
 // console.log("Environment Variables:");
 // console.log("PORT:", process.env.PORT);
 // console.log("DB_HOST:", process.env.DB_HOST);
